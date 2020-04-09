@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import data from './sampleData'
+import './App.css'
+import Queue from './components/Queue'
+import Library from './components/Library'
 
 function App() {
+  const songs = data
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Queue />
+      <Library />
+      <nav>
+        <p>Your Library</p>
+        <p>Queue</p>
+      </nav>
     </div>
   );
 }
 
-export default App;
+export default App
