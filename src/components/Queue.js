@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Queue = (props) => (
+const Queue = () => (
+  <>
   <section>
-    <p>I'm the queue!</p>
+    <p>I'm the queue!!</p>
   </section>
+  </>
 )
 
 export default Queue
