@@ -14,7 +14,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div>
+    <div class="bg">
         <nav>
     
           <ul>
@@ -33,7 +33,7 @@ function App() {
       </Switch>
       <Switch>
         <Route path = "/library">
-          <Library />
+          <Library songs={songs}/>
         </Route>
       </Switch>
         
