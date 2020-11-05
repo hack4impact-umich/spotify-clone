@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import data from './sampleData'
 import './App.css'
 import Queue from './components/Queue'
@@ -11,6 +11,7 @@ import { BrowserRouter, Switch, Route, Link } from  'react-router-dom'
 
 function App() {
   const songs = data
+  const [queue, setQueue] = useState([])
 
   return (
     <BrowserRouter>
@@ -28,12 +29,12 @@ function App() {
         </nav>
       <Switch>
         <Route path = "/queue">
-          <Queue />
+          <Queue queue={queue}/>
         </Route>
       </Switch>
       <Switch>
         <Route path = "/library">
-          <Library songs={songs}/>
+          <Library songs={songs} setQueue = {setQueue} queue={queue}/>
         </Route>
       </Switch>
         

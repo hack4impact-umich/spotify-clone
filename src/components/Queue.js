@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Queue = () => (
+const Queue = (props) => (
   <>
-  <section>
-    <p>I'm the queue!!</p>
-  </section>
+  {props.queue.map(song => (
+    <div>
+    {song.title}
+    </div>
+  ))}
+  
   </>
 )
 

@@ -3,7 +3,7 @@ import React from 'react'
 const Library = (props) => (
   <>
   {props.songs.map(song => (
-		<section>
+		<div style={{display: "inline"}}>
       <div class="song">
         <div class="image">
           <img src={song.imageURL} class="libraryimage"></img>
@@ -13,8 +13,9 @@ const Library = (props) => (
           <span class="artist">{song.artist}</span>
         </div>
       </div>
-      <span class="button">Add</span>
-		</section>
+      
+      <button class="button" onClick={() => props.setQueue([...props.queue, song])}>Add</button>
+		</div>
     
 	))}
   </>
