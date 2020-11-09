@@ -55,3 +55,7 @@ a {
   display: flex, inherit;
   align-self: flex-start;
 }
+.Headers {
+  font-size: 21px;
+  font-style: oblique;
+}

@@ -2,11 +2,31 @@ import React from 'react'
 
 const Queue = (props) => (
   <>
-  {props.queue.map(song => (
-    <div>
-    {song.title}
-    </div>
+  <div>
+  <div>
+      <span class="Headers">Now Playing</span>
+		<div style={{display: "inline"}}>
+      
+    {props.queue.map(song => (
+		<div style={{display: "inline"}}>
+      
+      <div class="song">
+        <div class="image">
+          <img src={song.imageURL} class="libraryimage"></img>
+        </div>
+        <div class="songinfo">
+          <span class="title">{song.title}</span>
+          <span class="artist">{song.artist}</span>
+        </div>
+      </div>
+		</div>
+    
   ))}
+		</div>
+    
+    </div>
+  
+  </div>
   
   </>
 )

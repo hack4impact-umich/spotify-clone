@@ -29,7 +29,7 @@ function App() {
         </nav>
       <Switch>
         <Route path = "/queue">
-          <Queue queue={queue}/>
+          <Queue queue={queue} />
         </Route>
       </Switch>
       <Switch>
