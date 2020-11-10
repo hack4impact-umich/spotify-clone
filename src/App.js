@@ -3,6 +3,7 @@ import data from './sampleData'
 import './App.css'
 import Queue from './components/Queue'
 import Library from './components/Library'
+import UpNext from './components/UpNext'
 
 
 
