@@ -18,7 +18,6 @@ function App() {
     <BrowserRouter>
     <div class="bg">
         <nav>
-    
           <ul>
             <li>
               <Link to="/library">Library</Link>
